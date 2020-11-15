@@ -18,6 +18,8 @@
 		656FF3042561565D0083452F /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 656FF3032561565D0083452F /* SDWebImageSwiftUI */; };
 		656FF30F25615A3C0083452F /* FoodClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 656FF30E25615A3C0083452F /* FoodClassifier.mlmodel */; };
 		656FF31825615CB10083452F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FF31725615CB10083452F /* ImagePicker.swift */; };
+		656FF320256191C70083452F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FF31F256191C70083452F /* DetailView.swift */; };
+		656FF3282561B2060083452F /* FoodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FF3272561B2060083452F /* FoodData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		656FF2E425614E570083452F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		656FF30E25615A3C0083452F /* FoodClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = FoodClassifier.mlmodel; path = ../../Downloads/FoodClassifier.mlmodel; sourceTree = "<group>"; };
 		656FF31725615CB10083452F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		656FF31F256191C70083452F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		656FF3272561B2060083452F /* FoodData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		656FF2C425614E550083452F /* Victus */ = {
 			isa = PBXGroup;
 			children = (
+				656FF3272561B2060083452F /* FoodData.swift */,
 				656FF2C525614E550083452F /* VictusApp.swift */,
 				656FF30E25615A3C0083452F /* FoodClassifier.mlmodel */,
 				656FF2C725614E550083452F /* ContentView.swift */,
@@ -112,6 +117,7 @@
 				656FF2CE25614E570083452F /* Info.plist */,
 				656FF2CB25614E570083452F /* Preview Content */,
 				656FF31725615CB10083452F /* ImagePicker.swift */,
+				656FF31F256191C70083452F /* DetailView.swift */,
 			);
 			path = Victus;
 			sourceTree = "<group>";
@@ -284,6 +290,8 @@
 				656FF30F25615A3C0083452F /* FoodClassifier.mlmodel in Sources */,
 				656FF31825615CB10083452F /* ImagePicker.swift in Sources */,
 				656FF2C825614E550083452F /* ContentView.swift in Sources */,
+				656FF3282561B2060083452F /* FoodData.swift in Sources */,
+				656FF320256191C70083452F /* DetailView.swift in Sources */,
 				656FF2C625614E550083452F /* VictusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

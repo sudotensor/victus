@@ -8,6 +8,10 @@
 import SwiftUI
 import CoreML
 
+enum ActiveSheet {
+    case photo, detail
+}
+
 struct ContentView: View {
     @State private var isShowPhotoLibrary = false
     @State private var image = UIImage()
@@ -15,6 +19,9 @@ struct ContentView: View {
     @State private var alertTitle = ""
     @State private var alertMessage = ""
     @State private var showingAlert = false
+    @State private var showSheet = false
+    @State private var activeSheet: ActiveSheet = .photo
+    @State private var predictedFood = ""
     
     var body: some View {
         VStack {
@@ -30,6 +37,7 @@ struct ContentView: View {
             
             Button(action: {
                 self.isShowPhotoLibrary = true
+                self.showSheet = true
             }) {
                 HStack {
                     Image(systemName: "photo")
@@ -42,7 +50,8 @@ struct ContentView: View {
                 .background(Color.blue)
                 .foregroundColor(.white)
                 .cornerRadius(16)
-                .padding(.all, 8)
+                .padding([.top, .leading, .trailing], 16)
+                .padding(.bottom, 8)
             }
             
             Button(action: {
@@ -50,6 +59,7 @@ struct ContentView: View {
                 image = cropImage(image: resizeImage(image: image, targetSize: CGSize(width: 299, height: 299)))
                 /* Call prediction routine on modified image */
                 predictFood()
+                activeSheet = .detail
             }) {
                 HStack {
                     Image(systemName: "wand.and.rays")
@@ -62,15 +72,19 @@ struct ContentView: View {
                 .background(self.imageSelected ? Color.blue : Color.gray)
                 .foregroundColor(.white)
                 .cornerRadius(16)
-                .padding(.horizontal, 8)
+                .padding(.horizontal, 16)
             }
             .disabled(!self.imageSelected)
         }
         .alert(isPresented: $showingAlert) {
             Alert(title: Text(alertTitle), message: Text(alertMessage), dismissButton: .default(Text("OK")){ self.imageSelected = false })
         }
-        .sheet(isPresented: $isShowPhotoLibrary) {
-            ImagePicker(selectedImage: self.$image, imageSelected: self.$imageSelected, sourceType: .camera)
+        .sheet(isPresented: $showSheet) {
+            if activeSheet == .photo {
+                ImagePicker(selectedImage: self.$image, imageSelected: self.$imageSelected, sourceType: .camera)
+            } else {
+                DetailView(predictedFood: predictedFood, showSheet: self.$showSheet, imageSelected: self.$imageSelected, activeSheet: self.$activeSheet)
+            }
         }
     }
     
@@ -87,13 +101,12 @@ struct ContentView: View {
         do {
             // Force un-wrapping is bad. Fix this later.
             let prediction = try model.prediction(image: buffer(from: image)!)
-            alertTitle = "The food was"
-            alertMessage = prediction.classLabel.replacingOccurrences(of: "_", with: " ").capitalized
+            predictedFood = prediction.classLabel.replacingOccurrences(of: "_", with: " ").capitalized
         } catch {
             alertTitle = "Error"
             alertMessage = "Sorry, there was a problem identifying the food item"
         }
-        showingAlert = true
+        self.showSheet = true
     }
     
     /* The follwing code block was 'borrowed' from the following stack-overflow post:
