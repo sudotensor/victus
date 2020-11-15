@@ -6,11 +6,15 @@
 //
 
 import SwiftUI
+import CoreML
 
 struct ContentView: View {
     @State private var isShowPhotoLibrary = false
     @State private var image = UIImage()
     @State private var imageSelected = false
+    @State private var alertTitle = ""
+    @State private var alertMessage = ""
+    @State private var showingAlert = false
     
     var body: some View {
         VStack {
@@ -38,12 +42,58 @@ struct ContentView: View {
                 .background(Color.blue)
                 .foregroundColor(.white)
                 .cornerRadius(16)
-                .padding(.horizontal)
+                .padding(.all, 8)
             }
+            
+            Button(action: {
+                /* Resize and crop image to appropriate size */
+                image = cropImage(image: resizeImage(image: image, targetSize: CGSize(width: 299, height: 299)))
+                /* Call prediction routine on modified image */
+                predictFood()
+            }) {
+                HStack {
+                    Image(systemName: "wand.and.rays")
+                        .font(.system(size: 20))
+                    
+                    Text("Identify Food")
+                        .font(.headline)
+                }
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 50)
+                .background(self.imageSelected ? Color.blue : Color.gray)
+                .foregroundColor(.white)
+                .cornerRadius(16)
+                .padding(.horizontal, 8)
+            }
+            .disabled(!self.imageSelected)
+        }
+        .alert(isPresented: $showingAlert) {
+            Alert(title: Text(alertTitle), message: Text(alertMessage), dismissButton: .default(Text("OK")){ self.imageSelected = false })
         }
         .sheet(isPresented: $isShowPhotoLibrary) {
             ImagePicker(selectedImage: self.$image, imageSelected: self.$imageSelected, sourceType: .camera)
         }
+    }
+    
+    func predictFood() {
+        let model: FoodClassifier = {
+            do {
+                let config = MLModelConfiguration()
+                return try FoodClassifier(configuration: config)
+            } catch {
+                print(error)
+                fatalError("Couldn't create FoodClassifier")
+            }
+        }()
+        do {
+            // Force un-wrapping is bad. Fix this later.
+            let prediction = try model.prediction(image: buffer(from: image)!)
+            alertTitle = "The food was"
+            alertMessage = prediction.classLabel
+        } catch {
+            alertTitle = "Error"
+            alertMessage = "Sorry, there was a problem identifying the food item"
+        }
+        showingAlert = true
     }
     
     /* The follwing code block was 'borrowed' from the following stack-overflow post:
