@@ -26,7 +26,7 @@ struct ContentView: View {
                     Image(systemName: "photo")
                         .font(.system(size: 20))
                     
-                    Text("Choose Photo")
+                    Text("Take Photo")
                         .font(.headline)
                 }
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 50)
@@ -37,7 +37,7 @@ struct ContentView: View {
             }
         }
         .sheet(isPresented: $isShowPhotoLibrary) {
-            ImagePicker(selectedImage: self.$image, sourceType: .photoLibrary)
+            ImagePicker(selectedImage: self.$image, sourceType: .camera)
         }
     }
 }
