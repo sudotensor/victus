@@ -15,6 +15,7 @@
 		656FF2E325614E570083452F /* VictusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FF2E225614E570083452F /* VictusUITests.swift */; };
 		656FF2F8256152A40083452F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 656FF2F7256152A40083452F /* Alamofire */; };
 		656FF2FE256155D50083452F /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 656FF2FD256155D50083452F /* SwiftyJSON */; };
+		656FF3042561565D0083452F /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 656FF3032561565D0083452F /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656FF3042561565D0083452F /* SDWebImageSwiftUI in Frameworks */,
 				656FF2FE256155D50083452F /* SwiftyJSON in Frameworks */,
 				656FF2F8256152A40083452F /* Alamofire in Frameworks */,
 			);
@@ -153,6 +155,7 @@
 			packageProductDependencies = (
 				656FF2F7256152A40083452F /* Alamofire */,
 				656FF2FD256155D50083452F /* SwiftyJSON */,
+				656FF3032561565D0083452F /* SDWebImageSwiftUI */,
 			);
 			productName = Victus;
 			productReference = 656FF2C225614E550083452F /* Victus.app */;
@@ -228,6 +231,7 @@
 			packageReferences = (
 				656FF2F6256152A40083452F /* XCRemoteSwiftPackageReference "Alamofire" */,
 				656FF2FC256155D50083452F /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				656FF3022561565D0083452F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 656FF2C325614E550083452F /* Products */;
 			projectDirPath = "";
@@ -610,6 +614,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		656FF3022561565D0083452F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -622,6 +634,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 656FF2FC256155D50083452F /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		656FF3032561565D0083452F /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 656FF3022561565D0083452F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
