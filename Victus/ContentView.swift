@@ -25,12 +25,20 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Text("Victus").fontWeight(.semibold).font(.largeTitle)
             if self.imageSelected {
                 Image(uiImage: self.image)
                     .resizable()
                     .scaledToFit()
                     .frame(minWidth: 0, maxWidth: .infinity)
-                    .edgesIgnoringSafeArea(.all)
+            } else {
+                Image("placeholder")
+                    .resizable()
+                    .scaledToFit()
+                    .padding(.bottom, 32)
+                    .padding(.horizontal, 16.0)
+                Text("Victus uses machine learning to identify the type of food and extracts nutritional information through API calls to Edamam. To get started, click on 'Take Photo'")
+                    .multilineTextAlignment(.center)
             }
             
             Spacer()
@@ -47,7 +55,7 @@ struct ContentView: View {
                         .font(.headline)
                 }
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 50)
-                .background(Color.blue)
+                .background(Color.accentColor)
                 .foregroundColor(.white)
                 .cornerRadius(16)
                 .padding([.top, .leading, .trailing], 16)
@@ -69,7 +77,7 @@ struct ContentView: View {
                         .font(.headline)
                 }
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 50)
-                .background(self.imageSelected ? Color.blue : Color.gray)
+                .background(self.imageSelected ? Color.accentColor : Color.gray)
                 .foregroundColor(.white)
                 .cornerRadius(16)
                 .padding(.horizontal, 16)
