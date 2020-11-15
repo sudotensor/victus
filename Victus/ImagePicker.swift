@@ -10,6 +10,7 @@ import UIKit
 
 struct ImagePicker: UIViewControllerRepresentable {
     @Binding var selectedImage: UIImage
+    @Binding var imageSelected: Bool
     @Environment(\.presentationMode) private var presentationMode
     
     // Allows access to photo library and use of in-built camera
@@ -43,6 +44,9 @@ struct ImagePicker: UIViewControllerRepresentable {
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
                 parent.selectedImage = image
+                parent.imageSelected = true
+            } else {
+                parent.imageSelected = false
             }
             
             parent.presentationMode.wrappedValue.dismiss()

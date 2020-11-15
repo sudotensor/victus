@@ -10,14 +10,19 @@ import SwiftUI
 struct ContentView: View {
     @State private var isShowPhotoLibrary = false
     @State private var image = UIImage()
+    @State private var imageSelected = false
     
     var body: some View {
         VStack {
-            Image(uiImage: self.image)
-                .resizable()
-                .scaledToFill()
-                .frame(minWidth: 0, maxWidth: .infinity)
-                .edgesIgnoringSafeArea(.all)
+            if self.imageSelected {
+                Image(uiImage: self.image)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .edgesIgnoringSafeArea(.all)
+            }
+            
+            Spacer()
             
             Button(action: {
                 self.isShowPhotoLibrary = true
@@ -37,9 +42,11 @@ struct ContentView: View {
             }
         }
         .sheet(isPresented: $isShowPhotoLibrary) {
-            ImagePicker(selectedImage: self.$image, sourceType: .camera)
+            ImagePicker(selectedImage: self.$image, imageSelected: self.$imageSelected, sourceType: .camera)
         }
     }
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
