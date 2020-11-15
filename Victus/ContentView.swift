@@ -37,7 +37,7 @@ struct ContentView: View {
             }
         }
         .sheet(isPresented: $isShowPhotoLibrary) {
-            ImagePicker(sourceType: .photoLibrary)
+            ImagePicker(selectedImage: self.$image, sourceType: .photoLibrary)
         }
     }
 }
