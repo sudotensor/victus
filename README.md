@@ -1,5 +1,7 @@
 Victus is a project that gives the nutritional information of food and provides sustainable/vegan alternatives and recipes and immune boosting recipes as well.
 
+https://youtu.be/A8DvlulOE4U
+
 **Inspiration**
 
 Eating habits have always had a major impact not only on our own immunity but also on the environment as well and lockdowns have only made our eating habits worse. This is why we wanted to develop Victus, an iOS application that displays the nutritional information of food which it scans and also notifies the user about more sustainable food choices, food choices that can boost immunity given the current Covid-19 situation and generally more nutritious options. Changing eating habits is key for sustainability since according to Oxford University switching to a vegan diet can reduce one’s carbon footprint by 73%! This is significantly more than if an individual decided to simply only use public transit. This is why in our app we give a sustainable food alternative by recommending vegan recipe alternatives. Furthermore picking foods which boost immunity can help in Covid-19 prevention and recovery as noted by Deanna Minich, Phd.
