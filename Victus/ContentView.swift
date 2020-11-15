@@ -88,7 +88,7 @@ struct ContentView: View {
             // Force un-wrapping is bad. Fix this later.
             let prediction = try model.prediction(image: buffer(from: image)!)
             alertTitle = "The food was"
-            alertMessage = prediction.classLabel
+            alertMessage = prediction.classLabel.replacingOccurrences(of: "_", with: " ").capitalized
         } catch {
             alertTitle = "Error"
             alertMessage = "Sorry, there was a problem identifying the food item"
