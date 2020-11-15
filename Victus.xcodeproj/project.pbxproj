@@ -14,6 +14,7 @@
 		656FF2D825614E570083452F /* VictusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FF2D725614E570083452F /* VictusTests.swift */; };
 		656FF2E325614E570083452F /* VictusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FF2E225614E570083452F /* VictusUITests.swift */; };
 		656FF2F8256152A40083452F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 656FF2F7256152A40083452F /* Alamofire */; };
+		656FF2FE256155D50083452F /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 656FF2FD256155D50083452F /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656FF2FE256155D50083452F /* SwiftyJSON in Frameworks */,
 				656FF2F8256152A40083452F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +152,7 @@
 			name = Victus;
 			packageProductDependencies = (
 				656FF2F7256152A40083452F /* Alamofire */,
+				656FF2FD256155D50083452F /* SwiftyJSON */,
 			);
 			productName = Victus;
 			productReference = 656FF2C225614E550083452F /* Victus.app */;
@@ -224,6 +227,7 @@
 			mainGroup = 656FF2B925614E550083452F;
 			packageReferences = (
 				656FF2F6256152A40083452F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				656FF2FC256155D50083452F /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 656FF2C325614E550083452F /* Products */;
 			projectDirPath = "";
@@ -598,6 +602,14 @@
 				minimumVersion = 5.4.0;
 			};
 		};
+		656FF2FC256155D50083452F /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -605,6 +617,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 656FF2F6256152A40083452F /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		656FF2FD256155D50083452F /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 656FF2FC256155D50083452F /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
