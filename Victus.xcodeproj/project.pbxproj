@@ -16,6 +16,8 @@
 		656FF2F8256152A40083452F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 656FF2F7256152A40083452F /* Alamofire */; };
 		656FF2FE256155D50083452F /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 656FF2FD256155D50083452F /* SwiftyJSON */; };
 		656FF3042561565D0083452F /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 656FF3032561565D0083452F /* SDWebImageSwiftUI */; };
+		656FF30F25615A3C0083452F /* FoodClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 656FF30E25615A3C0083452F /* FoodClassifier.mlmodel */; };
+		656FF31825615CB10083452F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FF31725615CB10083452F /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		656FF2DE25614E570083452F /* VictusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VictusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		656FF2E225614E570083452F /* VictusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VictusUITests.swift; sourceTree = "<group>"; };
 		656FF2E425614E570083452F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		656FF30E25615A3C0083452F /* FoodClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = FoodClassifier.mlmodel; path = ../../Downloads/FoodClassifier.mlmodel; sourceTree = "<group>"; };
+		656FF31725615CB10083452F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +106,12 @@
 			isa = PBXGroup;
 			children = (
 				656FF2C525614E550083452F /* VictusApp.swift */,
+				656FF30E25615A3C0083452F /* FoodClassifier.mlmodel */,
 				656FF2C725614E550083452F /* ContentView.swift */,
 				656FF2C925614E570083452F /* Assets.xcassets */,
 				656FF2CE25614E570083452F /* Info.plist */,
 				656FF2CB25614E570083452F /* Preview Content */,
+				656FF31725615CB10083452F /* ImagePicker.swift */,
 			);
 			path = Victus;
 			sourceTree = "<group>";
@@ -275,6 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656FF30F25615A3C0083452F /* FoodClassifier.mlmodel in Sources */,
+				656FF31825615CB10083452F /* ImagePicker.swift in Sources */,
 				656FF2C825614E550083452F /* ContentView.swift in Sources */,
 				656FF2C625614E550083452F /* VictusApp.swift in Sources */,
 			);
@@ -363,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -418,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
