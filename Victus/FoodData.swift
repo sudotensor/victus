@@ -19,4 +19,26 @@ struct FoodData {
     public var immunity: String
     public var vegan: String
     public var keto: String
+    
+    /* Links To Recipes */
+    public var immunityURL: String
+    public var veganURL: String
+    public var ketoURL: String
+    
+    init() {
+        calories = ""
+        protien = ""
+        fat = ""
+        carbs = ""
+        fiber = ""
+        
+        immunity = ""
+        immunityURL = ""
+        
+        vegan = ""
+        veganURL = ""
+        
+        keto = ""
+        ketoURL = ""
+    }
 }

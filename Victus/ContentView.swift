@@ -57,7 +57,7 @@ struct ContentView: View {
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 50)
                 .background(Color.accentColor)
                 .foregroundColor(.white)
-                .cornerRadius(16)
+                .cornerRadius(8)
                 .padding([.top, .leading, .trailing], 16)
                 .padding(.bottom, 8)
             }
@@ -79,7 +79,7 @@ struct ContentView: View {
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 50)
                 .background(self.imageSelected ? Color.accentColor : Color.gray)
                 .foregroundColor(.white)
-                .cornerRadius(16)
+                .cornerRadius(8)
                 .padding(.horizontal, 16)
             }
             .disabled(!self.imageSelected)
