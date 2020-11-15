@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		656FF2C625614E550083452F /* VictusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FF2C525614E550083452F /* VictusApp.swift */; };
+		656FF2C825614E550083452F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FF2C725614E550083452F /* ContentView.swift */; };
+		656FF2CA25614E570083452F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656FF2C925614E570083452F /* Assets.xcassets */; };
+		656FF2CD25614E570083452F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656FF2CC25614E570083452F /* Preview Assets.xcassets */; };
+		656FF2D825614E570083452F /* VictusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FF2D725614E570083452F /* VictusTests.swift */; };
+		656FF2E325614E570083452F /* VictusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FF2E225614E570083452F /* VictusUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		656FF2D425614E570083452F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 656FF2BA25614E550083452F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 656FF2C125614E550083452F;
+			remoteInfo = Victus;
+		};
+		656FF2DF25614E570083452F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 656FF2BA25614E550083452F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 656FF2C125614E550083452F;
+			remoteInfo = Victus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		656FF2C225614E550083452F /* Victus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Victus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		656FF2C525614E550083452F /* VictusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VictusApp.swift; sourceTree = "<group>"; };
+		656FF2C725614E550083452F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		656FF2C925614E570083452F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		656FF2CC25614E570083452F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		656FF2CE25614E570083452F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		656FF2D325614E570083452F /* VictusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VictusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		656FF2D725614E570083452F /* VictusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VictusTests.swift; sourceTree = "<group>"; };
+		656FF2D925614E570083452F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		656FF2DE25614E570083452F /* VictusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VictusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		656FF2E225614E570083452F /* VictusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VictusUITests.swift; sourceTree = "<group>"; };
+		656FF2E425614E570083452F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		656FF2BF25614E550083452F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656FF2D025614E570083452F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656FF2DB25614E570083452F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		656FF2B925614E550083452F = {
+			isa = PBXGroup;
+			children = (
+				656FF2C425614E550083452F /* Victus */,
+				656FF2D625614E570083452F /* VictusTests */,
+				656FF2E125614E570083452F /* VictusUITests */,
+				656FF2C325614E550083452F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		656FF2C325614E550083452F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				656FF2C225614E550083452F /* Victus.app */,
+				656FF2D325614E570083452F /* VictusTests.xctest */,
+				656FF2DE25614E570083452F /* VictusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		656FF2C425614E550083452F /* Victus */ = {
+			isa = PBXGroup;
+			children = (
+				656FF2C525614E550083452F /* VictusApp.swift */,
+				656FF2C725614E550083452F /* ContentView.swift */,
+				656FF2C925614E570083452F /* Assets.xcassets */,
+				656FF2CE25614E570083452F /* Info.plist */,
+				656FF2CB25614E570083452F /* Preview Content */,
+			);
+			path = Victus;
+			sourceTree = "<group>";
+		};
+		656FF2CB25614E570083452F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				656FF2CC25614E570083452F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		656FF2D625614E570083452F /* VictusTests */ = {
+			isa = PBXGroup;
+			children = (
+				656FF2D725614E570083452F /* VictusTests.swift */,
+				656FF2D925614E570083452F /* Info.plist */,
+			);
+			path = VictusTests;
+			sourceTree = "<group>";
+		};
+		656FF2E125614E570083452F /* VictusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				656FF2E225614E570083452F /* VictusUITests.swift */,
+				656FF2E425614E570083452F /* Info.plist */,
+			);
+			path = VictusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		656FF2C125614E550083452F /* Victus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 656FF2E725614E570083452F /* Build configuration list for PBXNativeTarget "Victus" */;
+			buildPhases = (
+				656FF2BE25614E550083452F /* Sources */,
+				656FF2BF25614E550083452F /* Frameworks */,
+				656FF2C025614E550083452F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Victus;
+			productName = Victus;
+			productReference = 656FF2C225614E550083452F /* Victus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		656FF2D225614E570083452F /* VictusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 656FF2EA25614E570083452F /* Build configuration list for PBXNativeTarget "VictusTests" */;
+			buildPhases = (
+				656FF2CF25614E570083452F /* Sources */,
+				656FF2D025614E570083452F /* Frameworks */,
+				656FF2D125614E570083452F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				656FF2D525614E570083452F /* PBXTargetDependency */,
+			);
+			name = VictusTests;
+			productName = VictusTests;
+			productReference = 656FF2D325614E570083452F /* VictusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		656FF2DD25614E570083452F /* VictusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 656FF2ED25614E570083452F /* Build configuration list for PBXNativeTarget "VictusUITests" */;
+			buildPhases = (
+				656FF2DA25614E570083452F /* Sources */,
+				656FF2DB25614E570083452F /* Frameworks */,
+				656FF2DC25614E570083452F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				656FF2E025614E570083452F /* PBXTargetDependency */,
+			);
+			name = VictusUITests;
+			productName = VictusUITests;
+			productReference = 656FF2DE25614E570083452F /* VictusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		656FF2BA25614E550083452F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					656FF2C125614E550083452F = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					656FF2D225614E570083452F = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 656FF2C125614E550083452F;
+					};
+					656FF2DD25614E570083452F = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 656FF2C125614E550083452F;
+					};
+				};
+			};
+			buildConfigurationList = 656FF2BD25614E550083452F /* Build configuration list for PBXProject "Victus" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 656FF2B925614E550083452F;
+			productRefGroup = 656FF2C325614E550083452F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				656FF2C125614E550083452F /* Victus */,
+				656FF2D225614E570083452F /* VictusTests */,
+				656FF2DD25614E570083452F /* VictusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		656FF2C025614E550083452F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				656FF2CD25614E570083452F /* Preview Assets.xcassets in Resources */,
+				656FF2CA25614E570083452F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656FF2D125614E570083452F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656FF2DC25614E570083452F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		656FF2BE25614E550083452F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				656FF2C825614E550083452F /* ContentView.swift in Sources */,
+				656FF2C625614E550083452F /* VictusApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656FF2CF25614E570083452F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				656FF2D825614E570083452F /* VictusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656FF2DA25614E570083452F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				656FF2E325614E570083452F /* VictusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		656FF2D525614E570083452F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 656FF2C125614E550083452F /* Victus */;
+			targetProxy = 656FF2D425614E570083452F /* PBXContainerItemProxy */;
+		};
+		656FF2E025614E570083452F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 656FF2C125614E550083452F /* Victus */;
+			targetProxy = 656FF2DF25614E570083452F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		656FF2E525614E570083452F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		656FF2E625614E570083452F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		656FF2E825614E570083452F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Victus/Preview Content\"";
+				DEVELOPMENT_TEAM = Q76T4L8CYR;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Victus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sudarshan.Victus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		656FF2E925614E570083452F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Victus/Preview Content\"";
+				DEVELOPMENT_TEAM = Q76T4L8CYR;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Victus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sudarshan.Victus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		656FF2EB25614E570083452F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q76T4L8CYR;
+				INFOPLIST_FILE = VictusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sudarshan.VictusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Victus.app/Victus";
+			};
+			name = Debug;
+		};
+		656FF2EC25614E570083452F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q76T4L8CYR;
+				INFOPLIST_FILE = VictusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sudarshan.VictusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Victus.app/Victus";
+			};
+			name = Release;
+		};
+		656FF2EE25614E570083452F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q76T4L8CYR;
+				INFOPLIST_FILE = VictusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sudarshan.VictusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Victus;
+			};
+			name = Debug;
+		};
+		656FF2EF25614E570083452F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q76T4L8CYR;
+				INFOPLIST_FILE = VictusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sudarshan.VictusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Victus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		656FF2BD25614E550083452F /* Build configuration list for PBXProject "Victus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				656FF2E525614E570083452F /* Debug */,
+				656FF2E625614E570083452F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		656FF2E725614E570083452F /* Build configuration list for PBXNativeTarget "Victus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				656FF2E825614E570083452F /* Debug */,
+				656FF2E925614E570083452F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		656FF2EA25614E570083452F /* Build configuration list for PBXNativeTarget "VictusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				656FF2EB25614E570083452F /* Debug */,
+				656FF2EC25614E570083452F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		656FF2ED25614E570083452F /* Build configuration list for PBXNativeTarget "VictusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				656FF2EE25614E570083452F /* Debug */,
+				656FF2EF25614E570083452F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 656FF2BA25614E550083452F /* Project object */;
+}
