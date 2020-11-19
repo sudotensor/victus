@@ -1,37 +1,51 @@
-Victus is a project that gives the nutritional information of food and provides sustainable/vegan alternatives and recipes and immune boosting recipes as well.
+## Victus
+
+> Latin translation: '_that which sustains life_'
+
+Victus is an iOS application that provides nutritional information of food items, coupled with recipe suggestions for vegan, sustainable, and immunity-boosting alternatives. The app was developed in collaboration with [Archit Soni](https://github.com/archit-soni) and [Siddhant Sharma](https://github.com/sidsharma3) as a submission for Oxford Hack 2020.
 
 https://youtu.be/A8DvlulOE4U
 
-**Inspiration**
+### Inspiration
 
-Eating habits have always had a major impact not only on our own immunity but also on the environment as well and lockdowns have only made our eating habits worse. This is why we wanted to develop Victus, an iOS application that displays the nutritional information of food which it scans and also notifies the user about more sustainable food choices, food choices that can boost immunity given the current Covid-19 situation and generally more nutritious options. Changing eating habits is key for sustainability since according to Oxford University switching to a vegan diet can reduce one’s carbon footprint by 73%! This is significantly more than if an individual decided to simply only use public transit. This is why in our app we give a sustainable food alternative by recommending vegan recipe alternatives. Furthermore picking foods which boost immunity can help in Covid-19 prevention and recovery as noted by Deanna Minich, Phd.
+Eating habits have always had an impact not only on our immunity but also on our environment. Lockdowns have only made these habits worse. To this end, we set to develop Victus - an iOS application that provides the nutritional information of food items while informing the user of sustainable and immunity-boosting alternatives. 
 
-Sources: Oxford Sustainability: https://www.independent.co.uk/life-style/health-and-families/veganism-environmental-impact-planet-reduced-plant-based-diet-humans-study-a8378631.html
+Changing eating habits is crucial for sustainability since, according to an Oxford University [study](https://www.independent.co.uk/life-style/health-and-families/veganism-environmental-impact-planet-reduced-plant-based-diet-humans-study-a8378631.html), one can reduce one's carbon footprint by 73% by switching to a vegan diet! Further, as [noted](https://www.prweb.com/releases/edamam_launches_an_immunity_supporting_diet_and_meal_recommender_for_the_covid_19_era/prweb17168115.htm) by Dr Deanna Minich, food items that help boost immunity could help one in COVID-19 prevention and recovery.
 
-Deanna Minich, immune boosting foods and impact on Covid-19 https://www.prweb.com/releases/edamam_launches_an_immunity_supporting_diet_and_meal_recommender_for_the_covid_19_era/prweb17168115.htm
+### Function
 
-**What it does**
+Victus enables the user to capture an image of a food item and uses a machine learning model to classify it. Then, it makes a few API calls to Edamam to extract nutritional information — calories, protein, fat, carbohydrates, and fibres — and inform the user with environmentally-sustainable recipes, which include vegan, immunity-boosting, and keto alternatives. 
 
-Victus allows the user to capture an image of any type of food whether it be fast food, vegetables, fine dining to a chip bag. The app then uses machine learning to classify the image of the food and notes all the nutritional information related to the food including its calorie count, protein count, fat content and carbohydrate content. In addition to this the application then gives the user recommendations on different recipes which are more sustainable for the environment by specifically listing a vegan alternative, more immune boosting or even keto-friendly recipes.
+### Construction
 
-**How we built it**
+The original plan was to create Victus using React Native and Python Flask. However, we pivoted to building an iOS application using Swift to better take advantage of native tools available to developers such as CoreML and SwiftUI. We build the user interface primarily using SwiftUI and used the [Food101](https://github.com/ph1ps/Food101-CoreML) CoreML model to classify the food item. Image transformation helpers were used to scale the captured image to the dimensions required by the model. The model's output result was then parsed and sent over to the Edamam Food Database via an API call to obtain the required information. This is then displayed to the user through a dismissable modal sheet.
 
-The original plan was to create a react native application which would call a Python Flask REST API which would classify the image and give the nutrition information. However we soon pivoted to building a native iOS app using Swift in order to better take advantage of the better native tools available to us with Swift (such as the InceptionV3 ML Model). We built the application’s user interface primarily using SwiftUI and added camera functionality to record a picture when the user uses the camera to capture a picture of the food. From here we sent the image to the InceptionV3 ML Model which then classified the image and using this classification connected the Edamam Food Database to get the nutrition information of the food and also to get more sustainable, healthy and immune boosting alternatives.
+### Challenges
 
-**Challenges we ran into**
+The challenges we faced were in regards to connecting and sending data between the third-party tools we chose to use. Specifically, extracting the data received through the Edamam API call proved to be a challenge. Through experimentation, however, we figured it out just a few hours before the hackathon deadline! Other minor challenges included the resizing and cropping of the image and familiarising ourselves with Swift and Xcode in general. We can't deny that Apple's documentation and a few posts on Stack Overflow, which are listed below, saved us quite a lot of time.
 
-The primary challenges we faced were in regards to connecting and sending data between all the third party tools available to us. One of the toughest challenges specifically was actually being able to send the picture not only to the MLModel but to also send the classification to the Edamam API and get the data from the Edamam API as well. The lack of documentation for the Edamam API made it difficult to make sure that we were using the correct API calls however through experimentation we soon were able to find a solution to this problem. Further challenges included understanding Swift code and learning the ins and outs of Xcode since our whole team was very new to native iOS application development however using resources like the Apple documentations and Stack Overflow this did not significantly disrupt our development timeline.
+### Accomplishments
 
-**Accomplishments that we're proud of**
+All members of our team are not only passionate about technology but also about using it to aid in pressing social issues facing society today. Through the course of the hack, our team gained significant experience in rapid prototyping and development, and we believe that this was our most significant accomplishment. And although Victus is primitive as a functional application, it made us realise the meaningful impact of apps that promote environmental-sustainability and healthy living. We're also quite pleased that we incorporated a 'fact-finding' mission in our development cycle, which ultimately provided the app purpose. We [identified](https://ourworldindata.org/food-choice-vs-eating-local) that our daily diets have an impact on greenhouse gas emissions than transportation and that a vegan diet was the most sustainable option! We're proud to be able to create a solution that helps educate users on making the right choice for their health and our environment.
 
-All of the team members are not only very passionate about technology but also about using technology to aid in pressing social issues facing society today. This is why the greatest accomplishment of our team in this Hackathon is being able to create an application that can have a real meaningful impact when it comes to sustainability and building immunity. By keeping the issue of sustainability in our development cycle we soon realized that our diets actually have a much larger impact on greenhouse gas emissions compared to transportation. We also realized that eating a vegan diet is the most sustainable option so we made sure that our app notes sustainable options by listing vegan alternatives. Being able to recognize this problem but then also build a technological solution that can also help others educate themselves on making sustainable choices is another great accomplishment our team had over the hackathon.
+### Reflection
 
-Source on why diets play a larger role on controlling greenhouse gas emissions when compared to transportation: https://ourworldindata.org/food-choice-vs-eating-local
+Building Victus has been a valuable learning opportunity for the entire team. With the team being relatively new to mobile app development and machine learning, we gained quite a bit of experience in connecting the dots. We believe that such experiences broaden the scope of our development knowledge and help us adapt to a wide range of challenging situations.
 
-**What we learned**
+### Future
 
-Completing this application has been an amazing learning achievement for all of us. With all of the team being relatively new to mobile application development in general and also not having experience in regards to machine learning we learned a lot not only how to connect to different tools but also how exactly image classification works and how to call APIs in a mobile device. Furthermore, one of the most important learnings was actually in mobile design for the application. Mobile application design is very different from the web application design the team is used to and being able to really see how to optimize the application for mobile, such as where to place certain buttons and how to indicate to the user the next steps was very interesting to experience and learn.
+Although our team is composed of students working under strict academic schedules, we do plan to continue the development of Victus for iOS as an opportunity to understand the 'quirks and features' of iOS development. We intend to add more features to the app, such as an option to upload an image and the ability to provide allergy information. 
 
-**What's next for Victus**
+### References
 
-The upcoming plan regarding Victus is to develop it into a multi-platform application where users from Android and Web Browsers are able to access the application. We have already begun development for this as we have a working Python Flask REST API which calls Google Cloud Vision services, for the front end we are using React Native and have developed a working camera module in it so far. Our idea is that soon after the hackathon, we will have a React front-end developed to run Victus on web browsers and further increase the user base. We intend to add more features in Victus, such as an option to upload the image instead of clicking it, giving allergy notifications and also providing data about various other diets a user could try depending on the food that they’re searching. These additional features paired with the iOS application and the React Native application will give Victus the reach needed to connect to more users on all major platforms.
+Oxford Hack Submission Video: [YouTube](https://youtu.be/A8DvlulOE4U)  
+Devpost Project: [Devpost](https://devpost.com/software/victus)
+
+#### Stack Overflow
+- [How to Convert a UIImage to a CVPixelBuffer](https://stackoverflow.com/questions/44462087/how-to-convert-a-uiimage-to-a-cvpixelbuffer)
+- [Swift - Cropping an Image to Remove Bottom Part](https://stackoverflow.com/questions/60617982/swift-cropping-an-image-to-remove-bottom-part)
+- [How to Resize an Image in Swift](https://stackoverflow.com/questions/31314412/how-to-resize-image-in-swift)
+
+#### Other
+- [Connecting SwiftUI to CoreML](https://www.hackingwithswift.com/books/ios-swiftui/connecting-swiftui-to-core-ml)
+- [How to Access Photo Library and Use Camera in SwiftUI](https://www.appcoda.com/swiftui-camera-photo-library/)
