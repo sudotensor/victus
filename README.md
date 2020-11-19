@@ -4,8 +4,6 @@
 
 Victus is an iOS application that provides nutritional information of food items, coupled with recipe suggestions for vegan, sustainable, and immunity-boosting alternatives. The app was developed in collaboration with [Archit Soni](https://github.com/archit-soni) and [Siddhant Sharma](https://github.com/sidsharma3) as a submission for Oxford Hack 2020.
 
-https://youtu.be/A8DvlulOE4U
-
 ### Inspiration
 
 Eating habits have always had an impact not only on our immunity but also on our environment. Lockdowns have only made these habits worse. To this end, we set to develop Victus - an iOS application that provides the nutritional information of food items while informing the user of sustainable and immunity-boosting alternatives. 
