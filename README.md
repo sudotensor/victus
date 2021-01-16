@@ -35,7 +35,6 @@ Building Victus has been a valuable learning opportunity for the entire team. Wi
 Although our team is composed of students working under strict academic schedules, we do plan to continue the development of Victus for iOS as an opportunity to understand the 'quirks and features' of iOS development. We intend to add more features to the app, such as an option to upload an image and the ability to provide allergy information. 
 
 ### References
-
 Oxford Hack Submission Video: [YouTube](https://youtu.be/A8DvlulOE4U)  
 Devpost Project: [Devpost](https://devpost.com/software/victus)
 
